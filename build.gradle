@@ -28,6 +28,8 @@ dependencies {
     //test lombok 사용
     testCompileOnly 'org.projectlombok:lombok'
     testAnnotationProcessor 'org.projectlombok:lombok'
+
+    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
 }
 
 

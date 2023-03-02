@@ -9,7 +9,7 @@ import java.util.List;
 
 @Data
 @ConfigurationProperties("my.datasource")
-public class MydataSourcePropertiesV1 {
+public class MyDataSourcePropertiesV1 {
     private String url;
     private String username;
     private String password;

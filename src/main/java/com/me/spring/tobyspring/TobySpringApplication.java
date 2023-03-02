@@ -1,6 +1,6 @@
 package com.me.spring.tobyspring;
 
-import com.me.spring.tobyspring.datasource.MyDataSourceConfigV1;
+import com.me.spring.tobyspring.datasource.MyDataSourceConfigV2;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
@@ -12,7 +12,8 @@ import org.springframework.web.servlet.DispatcherServlet;
 
 //@Configuration
 //@ComponentScan
-@Import(MyDataSourceConfigV1.class)
+//@Import(MyDataSourceConfigV1.class)
+@Import(MyDataSourceConfigV2.class)
 @SpringBootApplication(scanBasePackages = "com.me.spring.tobyspring.datasource")
 public class TobySpringApplication {
 
