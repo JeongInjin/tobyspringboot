@@ -15,7 +15,7 @@ import org.springframework.web.servlet.DispatcherServlet;
 //@Import(MyDataSourceConfigV1.class)
 //@Import(MyDataSourceConfigV2.class)
 @Import(MyDataSourceConfigV3.class)
-@SpringBootApplication(scanBasePackages = "com.me.spring.tobyspring.datasource")
+@SpringBootApplication(scanBasePackages = {"com.me.spring.tobyspring.datasource", "com.me.spring.tobyspring.pay"})
 public class TobySpringApplication {
 
     @Bean
