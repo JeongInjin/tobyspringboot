@@ -1,3 +1,9 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 #my.datasource.url=local.db.com
 #my.datasource.username=username
 #my.datasource.password=password
