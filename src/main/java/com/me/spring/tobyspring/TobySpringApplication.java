@@ -1,12 +1,10 @@
 package com.me.spring.tobyspring;
 
-import com.me.spring.tobyspring.datasource.MyDataSourceConfigV3;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Import;
 import org.springframework.web.servlet.DispatcherServlet;
 
 
@@ -14,8 +12,9 @@ import org.springframework.web.servlet.DispatcherServlet;
 //@ComponentScan
 //@Import(MyDataSourceConfigV1.class)
 //@Import(MyDataSourceConfigV2.class)
-@Import(MyDataSourceConfigV3.class)
-@SpringBootApplication(scanBasePackages = {"com.me.spring.tobyspring.datasource", "com.me.spring.tobyspring.pay"})
+//@Import(MyDataSourceConfigV3.class)
+//@SpringBootApplication(scanBasePackages = {"com.me.spring.tobyspring.datasource", "com.me.spring.tobyspring.pay"})
+@SpringBootApplication
 public class TobySpringApplication {
 
     @Bean
